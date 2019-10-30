@@ -1,2 +1,2 @@
-# predictions_selenium_testing
+# Selenium Testing
 Jed's testing for the platform
