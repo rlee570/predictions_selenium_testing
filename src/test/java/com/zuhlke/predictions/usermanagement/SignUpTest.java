@@ -24,10 +24,9 @@ public class SignUpTest extends BaseSeleniumTest {
     public void signUpNewUserAllFieldsEnteredCorrectly() {
         homePageSteps.aWebDriver(driver);
         homePageSteps.theUrl("http://10.4.103.131:3000");
-        homePageSteps.theHomePageIsDisplayed();
-        //signUpSteps.aWebDriver(DriverManagerType.CHROME);
-        //signUpSteps.theSignUpForm("Jed", "Dayo", "jesus_dayo@zuhlke.com", "test");
-        //signUpSteps.theSuccessMessageIsDisplayed("Sign up was s  uccessful");
+        signUpSteps.aWebDriver(driver);
+        signUpSteps.theSignUpForm("Jed", "Dayo", "jesus_dayo@zuhlke.com", "abcdefgh");
+        signUpSteps.theSuccessMessageIsDisplayed("Sign up was successful");
     }
 
 

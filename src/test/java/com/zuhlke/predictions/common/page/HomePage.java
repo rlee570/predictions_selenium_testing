@@ -18,18 +18,20 @@ public class HomePage {
         return driver;
     }
 
-    public void setDriver(WebDriver driver) {
-        this.driver = driver;
-    }
-
     public WebElement getSignUpBtn() {
-        signUpBtn = driver.findElement(By.xpath("//span[contains(text(),'Sign up')]"));
-        return signUpBtn;
+        return driver.findElement(By.xpath("//span[contains(text(),'Sign up')]"));
     }
 
     public WebElement getLoginBtn() {
-        loginBtn = driver.findElement(By.id("//span[contains(text(),'Log in')]"));
-        return loginBtn;
+        return driver.findElement(By.id("//span[contains(text(),'Log in')]"));
+    }
+
+    public void clickSignUpBtn() {
+        getSignUpBtn().click();
+    }
+
+    public void clickLoginBtn() {
+        getLoginBtn().click();
     }
 
 }
